@@ -1,5 +1,6 @@
 package com.example.polipet
 
+import RacaAdapter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,10 +11,12 @@ class EscolhaAnimalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_escolha_animal)
 
-        val racas = listOf("Shih Tzu", "Golden Retriever", "Labrador Retriever", "Bulldog", "Poodle")
+        val racas = listOf("Vira-latas (SRD)", "Shih Tzu", "Golden Retriever", "Labrador Retriever", "Bulldog", "Poodle","Pomerânia (Spitz Alemão)" +
+                "Bulldog Francês","Rottweiler","Pug","Pastor Alemão","Yorkshire Terrier","Border Collie","PitBull","Dachshund","Schnauzer","Poodle",
+            "Labrador" )
 
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = RacaAdapter(racas)
+        recyclerView.adapter = RacaAdapter(racas,this)
     }
 }
