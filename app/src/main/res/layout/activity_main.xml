@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="192dp"
+        android:layout_height="124dp"
+        android:src="@drawable/polipet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="Bem-vindo a Polipet"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" /> <!-- Adicionado um espaçamento acima do texto -->
+
+    <Button
+        android:id="@+id/enviarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vamos lá"
+        android:layout_marginTop="24dp" /> <!-- Adicionado um espaçamento acima do botão -->
+
+    <ImageView
+        android:layout_width="299dp"
+        android:layout_height="367dp"
+        android:src="@drawable/caoegato"
+        android:layout_marginTop="24dp" /> <!-- Adicionado um espaçamento acima da imagem -->
+
+</LinearLayout>
